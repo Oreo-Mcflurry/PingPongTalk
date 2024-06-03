@@ -10,9 +10,17 @@
 		0B0AD50D2C0DCA970061D015 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD50C2C0DCA970061D015 /* AppDelegate.swift */; };
 		0B0AD50F2C0DCA970061D015 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD50E2C0DCA970061D015 /* SceneDelegate.swift */; };
 		0B0AD5112C0DCA970061D015 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD5102C0DCA970061D015 /* ViewController.swift */; };
-		0B0AD5142C0DCA970061D015 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 0B0AD5132C0DCA970061D015 /* Base */; };
 		0B0AD5162C0DCA990061D015 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B0AD5152C0DCA990061D015 /* Assets.xcassets */; };
 		0B0AD5192C0DCA990061D015 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 0B0AD5182C0DCA990061D015 /* Base */; };
+		0B0AD5222C0DCB120061D015 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 0B0AD5212C0DCB120061D015 /* RxCocoa */; };
+		0B0AD5242C0DCB120061D015 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0B0AD5232C0DCB120061D015 /* RxSwift */; };
+		0B0AD5272C0DCB910061D015 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 0B0AD5262C0DCB910061D015 /* Moya */; };
+		0B0AD5292C0DCB910061D015 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 0B0AD5282C0DCB910061D015 /* RxMoya */; };
+		0B0AD52C2C0DCBB30061D015 /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 0B0AD52B2C0DCBB30061D015 /* PinLayout */; };
+		0B0AD52F2C0DCBD40061D015 /* FlexLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 0B0AD52E2C0DCBD40061D015 /* FlexLayout */; };
+		0B0AD5342C0DE2F20061D015 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD5332C0DE2F20061D015 /* APIKey.swift */; };
+		0B0AD5362C0DE2FA0061D015 /* APIKeyPublic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD5352C0DE2FA0061D015 /* APIKeyPublic.swift */; };
+		0B0AD5382C0DE3200061D015 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0B0AD5372C0DE3200061D015 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +28,12 @@
 		0B0AD50C2C0DCA970061D015 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B0AD50E2C0DCA970061D015 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0B0AD5102C0DCA970061D015 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0B0AD5132C0DCA970061D015 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0B0AD5152C0DCA990061D015 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B0AD5182C0DCA990061D015 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B0AD51A2C0DCA990061D015 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B0AD5332C0DE2F20061D015 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		0B0AD5352C0DE2FA0061D015 /* APIKeyPublic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeyPublic.swift; sourceTree = "<group>"; };
+		0B0AD5372C0DE3200061D015 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +41,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B0AD5242C0DCB120061D015 /* RxSwift in Frameworks */,
+				0B0AD52C2C0DCBB30061D015 /* PinLayout in Frameworks */,
+				0B0AD5222C0DCB120061D015 /* RxCocoa in Frameworks */,
+				0B0AD52F2C0DCBD40061D015 /* FlexLayout in Frameworks */,
+				0B0AD5292C0DCB910061D015 /* RxMoya in Frameworks */,
+				0B0AD5272C0DCB910061D015 /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +56,7 @@
 		0B0AD5002C0DCA970061D015 = {
 			isa = PBXGroup;
 			children = (
+				0B0AD5372C0DE3200061D015 /* .gitignore */,
 				0B0AD50B2C0DCA970061D015 /* PingPongTalk */,
 				0B0AD50A2C0DCA970061D015 /* Products */,
 			);
@@ -56,15 +73,40 @@
 		0B0AD50B2C0DCA970061D015 /* PingPongTalk */ = {
 			isa = PBXGroup;
 			children = (
+				0B0AD5302C0DE2C10061D015 /* Service */,
 				0B0AD50C2C0DCA970061D015 /* AppDelegate.swift */,
 				0B0AD50E2C0DCA970061D015 /* SceneDelegate.swift */,
 				0B0AD5102C0DCA970061D015 /* ViewController.swift */,
-				0B0AD5122C0DCA970061D015 /* Main.storyboard */,
 				0B0AD5152C0DCA990061D015 /* Assets.xcassets */,
 				0B0AD5172C0DCA990061D015 /* LaunchScreen.storyboard */,
 				0B0AD51A2C0DCA990061D015 /* Info.plist */,
 			);
 			path = PingPongTalk;
+			sourceTree = "<group>";
+		};
+		0B0AD5302C0DE2C10061D015 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				0B0AD5312C0DE2D00061D015 /* Request */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		0B0AD5312C0DE2D00061D015 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				0B0AD5322C0DE2E70061D015 /* APIKey */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		0B0AD5322C0DE2E70061D015 /* APIKey */ = {
+			isa = PBXGroup;
+			children = (
+				0B0AD5332C0DE2F20061D015 /* APIKey.swift */,
+				0B0AD5352C0DE2FA0061D015 /* APIKeyPublic.swift */,
+			);
+			path = APIKey;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +125,14 @@
 			dependencies = (
 			);
 			name = PingPongTalk;
+			packageProductDependencies = (
+				0B0AD5212C0DCB120061D015 /* RxCocoa */,
+				0B0AD5232C0DCB120061D015 /* RxSwift */,
+				0B0AD5262C0DCB910061D015 /* Moya */,
+				0B0AD5282C0DCB910061D015 /* RxMoya */,
+				0B0AD52B2C0DCBB30061D015 /* PinLayout */,
+				0B0AD52E2C0DCBD40061D015 /* FlexLayout */,
+			);
 			productName = PingPongTalk;
 			productReference = 0B0AD5092C0DCA970061D015 /* PingPongTalk.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +161,12 @@
 				Base,
 			);
 			mainGroup = 0B0AD5002C0DCA970061D015;
+			packageReferences = (
+				0B0AD5202C0DCB120061D015 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				0B0AD5252C0DCB900061D015 /* XCRemoteSwiftPackageReference "Moya" */,
+				0B0AD52A2C0DCBB30061D015 /* XCRemoteSwiftPackageReference "PinLayout" */,
+				0B0AD52D2C0DCBD40061D015 /* XCRemoteSwiftPackageReference "FlexLayout" */,
+			);
 			productRefGroup = 0B0AD50A2C0DCA970061D015 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,8 +182,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B0AD5162C0DCA990061D015 /* Assets.xcassets in Resources */,
+				0B0AD5382C0DE3200061D015 /* .gitignore in Resources */,
 				0B0AD5192C0DCA990061D015 /* Base in Resources */,
-				0B0AD5142C0DCA970061D015 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +196,8 @@
 			files = (
 				0B0AD5112C0DCA970061D015 /* ViewController.swift in Sources */,
 				0B0AD50D2C0DCA970061D015 /* AppDelegate.swift in Sources */,
+				0B0AD5362C0DE2FA0061D015 /* APIKeyPublic.swift in Sources */,
+				0B0AD5342C0DE2F20061D015 /* APIKey.swift in Sources */,
 				0B0AD50F2C0DCA970061D015 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +205,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0B0AD5122C0DCA970061D015 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0B0AD5132C0DCA970061D015 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0B0AD5172C0DCA990061D015 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,9 +347,9 @@
 				INFOPLIST_FILE = PingPongTalk/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,9 +357,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Yoo.PingPongTalk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -325,9 +379,9 @@
 				INFOPLIST_FILE = PingPongTalk/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,9 +389,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Yoo.PingPongTalk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -363,6 +421,74 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0B0AD5202C0DCB120061D015 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.7.1;
+			};
+		};
+		0B0AD5252C0DCB900061D015 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
+		0B0AD52A2C0DCBB30061D015 /* XCRemoteSwiftPackageReference "PinLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/layoutBox/PinLayout.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.10.5;
+			};
+		};
+		0B0AD52D2C0DCBD40061D015 /* XCRemoteSwiftPackageReference "FlexLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/layoutBox/FlexLayout.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0B0AD5212C0DCB120061D015 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0B0AD5202C0DCB120061D015 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		0B0AD5232C0DCB120061D015 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0B0AD5202C0DCB120061D015 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		0B0AD5262C0DCB910061D015 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0B0AD5252C0DCB900061D015 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		0B0AD5282C0DCB910061D015 /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0B0AD5252C0DCB900061D015 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+		0B0AD52B2C0DCBB30061D015 /* PinLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0B0AD52A2C0DCBB30061D015 /* XCRemoteSwiftPackageReference "PinLayout" */;
+			productName = PinLayout;
+		};
+		0B0AD52E2C0DCBD40061D015 /* FlexLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0B0AD52D2C0DCBD40061D015 /* XCRemoteSwiftPackageReference "FlexLayout" */;
+			productName = FlexLayout;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0B0AD5012C0DCA970061D015 /* Project object */;
 }
