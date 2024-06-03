@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+protocol DTODecodable: Decodable {
+	associatedtype M: DTOModel
+	func asDTOModel() -> M
+}

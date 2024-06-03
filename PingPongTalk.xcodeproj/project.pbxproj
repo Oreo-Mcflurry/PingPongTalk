@@ -21,6 +21,11 @@
 		0B0AD5342C0DE2F20061D015 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD5332C0DE2F20061D015 /* APIKey.swift */; };
 		0B0AD5362C0DE2FA0061D015 /* APIKeyPublic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD5352C0DE2FA0061D015 /* APIKeyPublic.swift */; };
 		0B0AD5382C0DE3200061D015 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0B0AD5372C0DE3200061D015 /* .gitignore */; };
+		0B0AD53B2C0DEBF30061D015 /* DTODecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD53A2C0DEBF30061D015 /* DTODecodable.swift */; };
+		0B0AD53D2C0DEC5F0061D015 /* DTOModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD53C2C0DEC5E0061D015 /* DTOModel.swift */; };
+		0B0AD5412C0DEDA20061D015 /* AuthRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD5402C0DEDA20061D015 /* AuthRouter.swift */; };
+		0B0AD5442C0DEECE0061D015 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD5432C0DEECE0061D015 /* KeychainManager.swift */; };
+		0B0AD5472C0DEF990061D015 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0B0AD5462C0DEF990061D015 /* KeychainSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +39,10 @@
 		0B0AD5332C0DE2F20061D015 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		0B0AD5352C0DE2FA0061D015 /* APIKeyPublic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeyPublic.swift; sourceTree = "<group>"; };
 		0B0AD5372C0DE3200061D015 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		0B0AD53A2C0DEBF30061D015 /* DTODecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTODecodable.swift; sourceTree = "<group>"; };
+		0B0AD53C2C0DEC5E0061D015 /* DTOModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTOModel.swift; sourceTree = "<group>"; };
+		0B0AD5402C0DEDA20061D015 /* AuthRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRouter.swift; sourceTree = "<group>"; };
+		0B0AD5432C0DEECE0061D015 /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +53,7 @@
 				0B0AD5242C0DCB120061D015 /* RxSwift in Frameworks */,
 				0B0AD52C2C0DCBB30061D015 /* PinLayout in Frameworks */,
 				0B0AD5222C0DCB120061D015 /* RxCocoa in Frameworks */,
+				0B0AD5472C0DEF990061D015 /* KeychainSwift in Frameworks */,
 				0B0AD52F2C0DCBD40061D015 /* FlexLayout in Frameworks */,
 				0B0AD5292C0DCB910061D015 /* RxMoya in Frameworks */,
 				0B0AD5272C0DCB910061D015 /* Moya in Frameworks */,
@@ -73,6 +83,7 @@
 		0B0AD50B2C0DCA970061D015 /* PingPongTalk */ = {
 			isa = PBXGroup;
 			children = (
+				0B0AD5392C0DEBC00061D015 /* Protocol */,
 				0B0AD5302C0DE2C10061D015 /* Service */,
 				0B0AD50C2C0DCA970061D015 /* AppDelegate.swift */,
 				0B0AD50E2C0DCA970061D015 /* SceneDelegate.swift */,
@@ -87,6 +98,7 @@
 		0B0AD5302C0DE2C10061D015 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				0B0AD5422C0DEEBC0061D015 /* Keychain */,
 				0B0AD5312C0DE2D00061D015 /* Request */,
 			);
 			path = Service;
@@ -95,6 +107,7 @@
 		0B0AD5312C0DE2D00061D015 /* Request */ = {
 			isa = PBXGroup;
 			children = (
+				0B0AD53E2C0DED8F0061D015 /* Router */,
 				0B0AD5322C0DE2E70061D015 /* APIKey */,
 			);
 			path = Request;
@@ -107,6 +120,39 @@
 				0B0AD5352C0DE2FA0061D015 /* APIKeyPublic.swift */,
 			);
 			path = APIKey;
+			sourceTree = "<group>";
+		};
+		0B0AD5392C0DEBC00061D015 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				0B0AD53A2C0DEBF30061D015 /* DTODecodable.swift */,
+				0B0AD53C2C0DEC5E0061D015 /* DTOModel.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		0B0AD53E2C0DED8F0061D015 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				0B0AD53F2C0DED930061D015 /* Auth */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		0B0AD53F2C0DED930061D015 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				0B0AD5402C0DEDA20061D015 /* AuthRouter.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		0B0AD5422C0DEEBC0061D015 /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				0B0AD5432C0DEECE0061D015 /* KeychainManager.swift */,
+			);
+			path = Keychain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +178,7 @@
 				0B0AD5282C0DCB910061D015 /* RxMoya */,
 				0B0AD52B2C0DCBB30061D015 /* PinLayout */,
 				0B0AD52E2C0DCBD40061D015 /* FlexLayout */,
+				0B0AD5462C0DEF990061D015 /* KeychainSwift */,
 			);
 			productName = PingPongTalk;
 			productReference = 0B0AD5092C0DCA970061D015 /* PingPongTalk.app */;
@@ -166,6 +213,7 @@
 				0B0AD5252C0DCB900061D015 /* XCRemoteSwiftPackageReference "Moya" */,
 				0B0AD52A2C0DCBB30061D015 /* XCRemoteSwiftPackageReference "PinLayout" */,
 				0B0AD52D2C0DCBD40061D015 /* XCRemoteSwiftPackageReference "FlexLayout" */,
+				0B0AD5452C0DEF990061D015 /* XCRemoteSwiftPackageReference "keychain-swift" */,
 			);
 			productRefGroup = 0B0AD50A2C0DCA970061D015 /* Products */;
 			projectDirPath = "";
@@ -197,7 +245,11 @@
 				0B0AD5112C0DCA970061D015 /* ViewController.swift in Sources */,
 				0B0AD50D2C0DCA970061D015 /* AppDelegate.swift in Sources */,
 				0B0AD5362C0DE2FA0061D015 /* APIKeyPublic.swift in Sources */,
+				0B0AD53B2C0DEBF30061D015 /* DTODecodable.swift in Sources */,
+				0B0AD5442C0DEECE0061D015 /* KeychainManager.swift in Sources */,
 				0B0AD5342C0DE2F20061D015 /* APIKey.swift in Sources */,
+				0B0AD53D2C0DEC5F0061D015 /* DTOModel.swift in Sources */,
+				0B0AD5412C0DEDA20061D015 /* AuthRouter.swift in Sources */,
 				0B0AD50F2C0DCA970061D015 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -455,6 +507,14 @@
 				minimumVersion = 2.0.7;
 			};
 		};
+		0B0AD5452C0DEF990061D015 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 24.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -487,6 +547,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0B0AD52D2C0DCBD40061D015 /* XCRemoteSwiftPackageReference "FlexLayout" */;
 			productName = FlexLayout;
+		};
+		0B0AD5462C0DEF990061D015 /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0B0AD5452C0DEF990061D015 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
