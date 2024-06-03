@@ -5,4 +5,9 @@
 //  Created by A_Mcflurry on 6/3/24.
 //
 
-import Foundation
+//import Foundation
+
+//enum APIKey: String {
+//	case key = "KEY"
+//	case baseURL = "http://baseurl.com"
+//}
