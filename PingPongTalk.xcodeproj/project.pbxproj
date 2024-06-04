@@ -46,6 +46,8 @@
 		0B0AD57B2C0F52440061D015 /* AppleLoginRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD57A2C0F52440061D015 /* AppleLoginRequestModel.swift */; };
 		0B0AD57D2C0F52A10061D015 /* DeviceTokenRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD57C2C0F52A10061D015 /* DeviceTokenRequestModel.swift */; };
 		0B0AD57F2C0F53F80061D015 /* EditProfileRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD57E2C0F53F80061D015 /* EditProfileRequestModel.swift */; };
+		0B0AD5812C0F56E80061D015 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD5802C0F56E80061D015 /* UserRepository.swift */; };
+		0B0AD5832C0F570A0061D015 /* UserRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD5822C0F570A0061D015 /* UserRepositoryImpl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +85,8 @@
 		0B0AD57A2C0F52440061D015 /* AppleLoginRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleLoginRequestModel.swift; sourceTree = "<group>"; };
 		0B0AD57C2C0F52A10061D015 /* DeviceTokenRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTokenRequestModel.swift; sourceTree = "<group>"; };
 		0B0AD57E2C0F53F80061D015 /* EditProfileRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileRequestModel.swift; sourceTree = "<group>"; };
+		0B0AD5802C0F56E80061D015 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		0B0AD5822C0F570A0061D015 /* UserRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryImpl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,6 +287,8 @@
 			isa = PBXGroup;
 			children = (
 				0B0AD5612C0F2E990061D015 /* UserRouter.swift */,
+				0B0AD5802C0F56E80061D015 /* UserRepository.swift */,
+				0B0AD5822C0F570A0061D015 /* UserRepositoryImpl.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -427,9 +433,11 @@
 				0B0AD57F2C0F53F80061D015 /* EditProfileRequestModel.swift in Sources */,
 				0B0AD5112C0DCA970061D015 /* ViewController.swift in Sources */,
 				0B0AD50D2C0DCA970061D015 /* AppDelegate.swift in Sources */,
+				0B0AD5832C0F570A0061D015 /* UserRepositoryImpl.swift in Sources */,
 				0B0AD5362C0DE2FA0061D015 /* APIKeyPublic.swift in Sources */,
 				0B0AD5642C0F30880061D015 /* UserJoinRequestModel.swift in Sources */,
 				0B0AD53B2C0DEBF30061D015 /* DTODecodable.swift in Sources */,
+				0B0AD5812C0F56E80061D015 /* UserRepository.swift in Sources */,
 				0B0AD57D2C0F52A10061D015 /* DeviceTokenRequestModel.swift in Sources */,
 				0B0AD5792C0F522C0061D015 /* KakaoLoginRequestModel.swift in Sources */,
 				0B0AD5592C0E8FDC0061D015 /* HTTPHeaders.swift in Sources */,

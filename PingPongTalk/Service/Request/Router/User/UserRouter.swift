@@ -127,6 +127,4 @@ extension UserRouter: TargetType {
 			]
 		}
 	}
-	
-
 }
