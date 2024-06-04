@@ -33,6 +33,11 @@
 		0B0AD55B2C0E95BB0061D015 /* AuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD55A2C0E95BB0061D015 /* AuthRepository.swift */; };
 		0B0AD55D2C0E965E0061D015 /* AuthRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD55C2C0E965E0061D015 /* AuthRepositoryImpl.swift */; };
 		0B0AD55F2C0E985C0061D015 /* RefreshAccessTokenResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD55E2C0E985C0061D015 /* RefreshAccessTokenResultModel.swift */; };
+		0B0AD5622C0F2E990061D015 /* UserRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD5612C0F2E990061D015 /* UserRouter.swift */; };
+		0B0AD5642C0F30880061D015 /* UserJoinRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD5632C0F30880061D015 /* UserJoinRequestModel.swift */; };
+		0B0AD5692C0F30CC0061D015 /* UserJoinDTOModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD5682C0F30CC0061D015 /* UserJoinDTOModel.swift */; };
+		0B0AD56C2C0F30F70061D015 /* UserJoinReusultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD56B2C0F30F70061D015 /* UserJoinReusultModel.swift */; };
+		0B0AD56F2C0F328E0061D015 /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD56E2C0F328E0061D015 /* DateFormatter+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +62,11 @@
 		0B0AD55A2C0E95BB0061D015 /* AuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepository.swift; sourceTree = "<group>"; };
 		0B0AD55C2C0E965E0061D015 /* AuthRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepositoryImpl.swift; sourceTree = "<group>"; };
 		0B0AD55E2C0E985C0061D015 /* RefreshAccessTokenResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshAccessTokenResultModel.swift; sourceTree = "<group>"; };
+		0B0AD5612C0F2E990061D015 /* UserRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRouter.swift; sourceTree = "<group>"; };
+		0B0AD5632C0F30880061D015 /* UserJoinRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserJoinRequestModel.swift; sourceTree = "<group>"; };
+		0B0AD5682C0F30CC0061D015 /* UserJoinDTOModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserJoinDTOModel.swift; sourceTree = "<group>"; };
+		0B0AD56B2C0F30F70061D015 /* UserJoinReusultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserJoinReusultModel.swift; sourceTree = "<group>"; };
+		0B0AD56E2C0F328E0061D015 /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +107,7 @@
 		0B0AD50B2C0DCA970061D015 /* PingPongTalk */ = {
 			isa = PBXGroup;
 			children = (
+				0B0AD56D2C0F32860061D015 /* Extension */,
 				0B0AD5482C0E8F000061D015 /* Model */,
 				0B0AD5392C0DEBC00061D015 /* Protocol */,
 				0B0AD5302C0DE2C10061D015 /* Service */,
@@ -150,6 +161,7 @@
 		0B0AD53E2C0DED8F0061D015 /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				0B0AD5602C0F1BF60061D015 /* User */,
 				0B0AD53F2C0DED930061D015 /* Auth */,
 			);
 			path = Router;
@@ -186,6 +198,7 @@
 		0B0AD5492C0E8F040061D015 /* Encode */ = {
 			isa = PBXGroup;
 			children = (
+				0B0AD5652C0F308B0061D015 /* User */,
 			);
 			path = Encode;
 			sourceTree = "<group>";
@@ -193,7 +206,8 @@
 		0B0AD54A2C0E8F080061D015 /* Decode */ = {
 			isa = PBXGroup;
 			children = (
-				0B0AD55E2C0E985C0061D015 /* RefreshAccessTokenResultModel.swift */,
+				0B0AD56A2C0F30EB0061D015 /* User */,
+				0B0AD5662C0F30910061D015 /* Auth */,
 			);
 			path = Decode;
 			sourceTree = "<group>";
@@ -201,6 +215,7 @@
 		0B0AD54B2C0E8F150061D015 /* DTO */ = {
 			isa = PBXGroup;
 			children = (
+				0B0AD5672C0F30C30061D015 /* User */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -246,6 +261,54 @@
 				0B0AD5522C0E8FC10061D015 /* Logger */,
 			);
 			path = Plugin;
+			sourceTree = "<group>";
+		};
+		0B0AD5602C0F1BF60061D015 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				0B0AD5612C0F2E990061D015 /* UserRouter.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		0B0AD5652C0F308B0061D015 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				0B0AD5632C0F30880061D015 /* UserJoinRequestModel.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		0B0AD5662C0F30910061D015 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				0B0AD55E2C0E985C0061D015 /* RefreshAccessTokenResultModel.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		0B0AD5672C0F30C30061D015 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				0B0AD5682C0F30CC0061D015 /* UserJoinDTOModel.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		0B0AD56A2C0F30EB0061D015 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				0B0AD56B2C0F30F70061D015 /* UserJoinReusultModel.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		0B0AD56D2C0F32860061D015 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0B0AD56E2C0F328E0061D015 /* DateFormatter+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,16 +402,21 @@
 				0B0AD5112C0DCA970061D015 /* ViewController.swift in Sources */,
 				0B0AD50D2C0DCA970061D015 /* AppDelegate.swift in Sources */,
 				0B0AD5362C0DE2FA0061D015 /* APIKeyPublic.swift in Sources */,
+				0B0AD5642C0F30880061D015 /* UserJoinRequestModel.swift in Sources */,
 				0B0AD53B2C0DEBF30061D015 /* DTODecodable.swift in Sources */,
 				0B0AD5592C0E8FDC0061D015 /* HTTPHeaders.swift in Sources */,
 				0B0AD5542C0E8FC10061D015 /* MoyaCache.swift in Sources */,
 				0B0AD5562C0E8FC10061D015 /* MoyaLogger.swift in Sources */,
+				0B0AD5692C0F30CC0061D015 /* UserJoinDTOModel.swift in Sources */,
 				0B0AD5552C0E8FC10061D015 /* Interceptor.swift in Sources */,
 				0B0AD5442C0DEECE0061D015 /* KeychainManager.swift in Sources */,
 				0B0AD5342C0DE2F20061D015 /* APIKey.swift in Sources */,
 				0B0AD53D2C0DEC5F0061D015 /* DTOModel.swift in Sources */,
 				0B0AD55B2C0E95BB0061D015 /* AuthRepository.swift in Sources */,
 				0B0AD5412C0DEDA20061D015 /* AuthRouter.swift in Sources */,
+				0B0AD5622C0F2E990061D015 /* UserRouter.swift in Sources */,
+				0B0AD56F2C0F328E0061D015 /* DateFormatter+Extension.swift in Sources */,
+				0B0AD56C2C0F30F70061D015 /* UserJoinReusultModel.swift in Sources */,
 				0B0AD55D2C0E965E0061D015 /* AuthRepositoryImpl.swift in Sources */,
 				0B0AD50F2C0DCA970061D015 /* SceneDelegate.swift in Sources */,
 			);
