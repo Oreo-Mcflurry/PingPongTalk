@@ -111,19 +111,61 @@ extension UserRouter: TargetType {
 	
 	var headers: [String : String]? {
 		switch self {
-		case .join, .validationEmail, .login, .kakaoLogin, .appleLogin, .logout, .deviceToken, .getMyProfile, .editMyProfile, .editMyImage:
+		case .join, .kakaoLogin, .appleLogin:
+			return [
+				HTTPHeaders.accept.rawValue: HTTPHeaders.json.rawValue,
+				HTTPHeaders.key.rawValue: APIKey.key.rawValue,
+				HTTPHeaders.contentType.rawValue: HTTPHeaders.json.rawValue
+			]
+		case .validationEmail:
+			return [
+				HTTPHeaders.accept.rawValue: HTTPHeaders.star.rawValue,
+				HTTPHeaders.key.rawValue: APIKey.key.rawValue,
+				HTTPHeaders.contentType.rawValue: HTTPHeaders.json.rawValue
+			]
+		case .login:
+			return [
+				HTTPHeaders.accept.rawValue: HTTPHeaders.star.rawValue,
+				HTTPHeaders.contentType.rawValue: HTTPHeaders.json.rawValue
+			]
+		case .logout:
+			return [
+				HTTPHeaders.accept.rawValue: HTTPHeaders.star.rawValue,
+				HTTPHeaders.key.rawValue: APIKey.key.rawValue,
+				HTTPHeaders.auth.rawValue: KeychainManager.getData(with: .accessToken)
+			]
+		case .deviceToken:
+			return [
+				HTTPHeaders.accept.rawValue: HTTPHeaders.star.rawValue,
+				HTTPHeaders.key.rawValue: APIKey.key.rawValue,
+				HTTPHeaders.auth.rawValue: KeychainManager.getData(with: .accessToken),
+				HTTPHeaders.contentType.rawValue: HTTPHeaders.json.rawValue
+			]
+		case .getMyProfile:
+			return [
+				HTTPHeaders.accept.rawValue: HTTPHeaders.json.rawValue,
+				HTTPHeaders.key.rawValue: APIKey.key.rawValue,
+				HTTPHeaders.auth.rawValue: KeychainManager.getData(with: .accessToken)
+			]
+		case .editMyProfile:
 			return [
 				HTTPHeaders.accept.rawValue: HTTPHeaders.json.rawValue,
 				HTTPHeaders.key.rawValue: APIKey.key.rawValue,
 				HTTPHeaders.auth.rawValue: KeychainManager.getData(with: .accessToken),
 				HTTPHeaders.contentType.rawValue: HTTPHeaders.json.rawValue
 			]
-		case .getUserProfile(let userID):
+		case .editMyImage:
 			return [
 				HTTPHeaders.accept.rawValue: HTTPHeaders.json.rawValue,
 				HTTPHeaders.key.rawValue: APIKey.key.rawValue,
 				HTTPHeaders.auth.rawValue: KeychainManager.getData(with: .accessToken),
 				HTTPHeaders.contentType.rawValue: HTTPHeaders.multipart.rawValue
+			]
+		case .getUserProfile(let userID):
+			return [
+				HTTPHeaders.accept.rawValue: HTTPHeaders.json.rawValue,
+				HTTPHeaders.key.rawValue: APIKey.key.rawValue,
+				HTTPHeaders.auth.rawValue: KeychainManager.getData(with: .accessToken)
 			]
 		}
 	}

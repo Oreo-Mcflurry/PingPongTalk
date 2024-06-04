@@ -15,4 +15,5 @@ enum HTTPHeaders: String {
 	case key = "SesacKey"
 	case contentType = "Content-Type"
 	case multipart = "multipart/form-data"
+	case star = "*/*"
 }
