@@ -10,15 +10,15 @@ import Moya
 
 enum UserRouter {
 	case join(query: UserJoinRequestModel)
-	case validationEmail
-	case login
-	case kakaoLogin
-	case appleLogin
+	case validationEmail(query: EmailValidationRequestModel)
+	case login(query: EmailLoginRequestModel)
+	case kakaoLogin(query: KakaoLoginRequestModel)
+	case appleLogin(query: AppleLoginRequestModel)
 	case logout
-	case deviceToken
+	case deviceToken(query: DeviceTokenRequestModel)
 	case getMyProfile
-	case putMyProfile
-	case putMyImage
+	case editMyProfile(query: EditProfileRequestModel)
+	case editMyImage(query: Data)
 	case getUserProfile(userID: String)
 }
 
@@ -45,9 +45,9 @@ extension UserRouter: TargetType {
 			return "v1/users/deviceToken"
 		case .getMyProfile:
 			return "v1/users/me"
-		case .putMyProfile:
+		case .editMyProfile:
 			return "v1/users/me"
-		case .putMyImage:
+		case .editMyImage:
 			return "v1/users/me/image"
 		case .getUserProfile(let userID):
 			return "v1/users/\(userID)"
@@ -72,9 +72,9 @@ extension UserRouter: TargetType {
 			return .post
 		case .getMyProfile:
 			return .get
-		case .putMyProfile:
+		case .editMyProfile:
 			return .put
-		case .putMyImage:
+		case .editMyImage:
 			return .put
 		case .getUserProfile:
 			return .get
@@ -85,31 +85,47 @@ extension UserRouter: TargetType {
 		switch self {
 		case .join(let query):
 			return .requestJSONEncodable(query)
-		case .validationEmail:
-			<#code#>
-		case .login:
-			<#code#>
-		case .kakaoLogin:
-			<#code#>
-		case .appleLogin:
-			<#code#>
+		case .validationEmail(let query):
+			return .requestJSONEncodable(query)
+		case .login(let query):
+			return .requestJSONEncodable(query)
+		case .kakaoLogin(let query):
+			return .requestJSONEncodable(query)
+		case .appleLogin(let query):
+			return .requestJSONEncodable(query)
 		case .logout:
 			return .requestPlain
-		case .deviceToken:
-			<#code#>
+		case .deviceToken(let query):
+			return .requestJSONEncodable(query)
 		case .getMyProfile:
 			return .requestPlain
-		case .putMyProfile:
-			<#code#>
-		case .putMyImage:
-			<#code#>
+		case .editMyProfile(let query):
+			return .requestJSONEncodable(query)
+		case .editMyImage(let query):
+			let profileImage = MultipartFormData(provider: .data(query), name: "Profile")
+			return .uploadMultipart([profileImage])
 		case .getUserProfile:
 			return .requestPlain
 		}
 	}
 	
 	var headers: [String : String]? {
-		<#code#>
+		switch self {
+		case .join, .validationEmail, .login, .kakaoLogin, .appleLogin, .logout, .deviceToken, .getMyProfile, .editMyProfile, .editMyImage:
+			return [
+				HTTPHeaders.accept.rawValue: HTTPHeaders.json.rawValue,
+				HTTPHeaders.key.rawValue: APIKey.key.rawValue,
+				HTTPHeaders.auth.rawValue: KeychainManager.getData(with: .accessToken),
+				HTTPHeaders.contentType.rawValue: HTTPHeaders.json.rawValue
+			]
+		case .getUserProfile(let userID):
+			return [
+				HTTPHeaders.accept.rawValue: HTTPHeaders.json.rawValue,
+				HTTPHeaders.key.rawValue: APIKey.key.rawValue,
+				HTTPHeaders.auth.rawValue: KeychainManager.getData(with: .accessToken),
+				HTTPHeaders.contentType.rawValue: HTTPHeaders.multipart.rawValue
+			]
+		}
 	}
 	
 

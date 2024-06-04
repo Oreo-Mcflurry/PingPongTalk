@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct UserJoinReusultModel: DTODecodable {
+struct UserReusultModel: DTODecodable {
 
 	let user_id: String
 	let email: String
@@ -18,9 +18,9 @@ struct UserJoinReusultModel: DTODecodable {
 	let createdAt: String
 	let token: Token
 
-	func asDTOModel() -> UserJoinDTOModel {
+	func asDTOModel() -> UserDTOModel {
 		let date = DateFormatter.defaultFormatter.date(from: createdAt) ?? Date()
-		return UserJoinDTOModel(
+		return UserDTOModel(
 			userID: user_id,
 			email: email,
 			nickName: nickname,

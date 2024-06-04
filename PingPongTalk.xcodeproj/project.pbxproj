@@ -35,9 +35,17 @@
 		0B0AD55F2C0E985C0061D015 /* RefreshAccessTokenResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD55E2C0E985C0061D015 /* RefreshAccessTokenResultModel.swift */; };
 		0B0AD5622C0F2E990061D015 /* UserRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD5612C0F2E990061D015 /* UserRouter.swift */; };
 		0B0AD5642C0F30880061D015 /* UserJoinRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD5632C0F30880061D015 /* UserJoinRequestModel.swift */; };
-		0B0AD5692C0F30CC0061D015 /* UserJoinDTOModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD5682C0F30CC0061D015 /* UserJoinDTOModel.swift */; };
-		0B0AD56C2C0F30F70061D015 /* UserJoinReusultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD56B2C0F30F70061D015 /* UserJoinReusultModel.swift */; };
+		0B0AD5692C0F30CC0061D015 /* UserDTOModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD5682C0F30CC0061D015 /* UserDTOModel.swift */; };
+		0B0AD56C2C0F30F70061D015 /* UserReusultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD56B2C0F30F70061D015 /* UserReusultModel.swift */; };
 		0B0AD56F2C0F328E0061D015 /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD56E2C0F328E0061D015 /* DateFormatter+Extension.swift */; };
+		0B0AD5712C0F33880061D015 /* EmailValidationRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD5702C0F33880061D015 /* EmailValidationRequestModel.swift */; };
+		0B0AD5732C0F33A50061D015 /* EmailValidationResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD5722C0F33A50061D015 /* EmailValidationResultModel.swift */; };
+		0B0AD5752C0F33C10061D015 /* EmailValidationDTOModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD5742C0F33C10061D015 /* EmailValidationDTOModel.swift */; };
+		0B0AD5772C0F51DC0061D015 /* EmailLoginRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD5762C0F51DC0061D015 /* EmailLoginRequestModel.swift */; };
+		0B0AD5792C0F522C0061D015 /* KakaoLoginRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD5782C0F522C0061D015 /* KakaoLoginRequestModel.swift */; };
+		0B0AD57B2C0F52440061D015 /* AppleLoginRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD57A2C0F52440061D015 /* AppleLoginRequestModel.swift */; };
+		0B0AD57D2C0F52A10061D015 /* DeviceTokenRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD57C2C0F52A10061D015 /* DeviceTokenRequestModel.swift */; };
+		0B0AD57F2C0F53F80061D015 /* EditProfileRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD57E2C0F53F80061D015 /* EditProfileRequestModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,9 +72,17 @@
 		0B0AD55E2C0E985C0061D015 /* RefreshAccessTokenResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshAccessTokenResultModel.swift; sourceTree = "<group>"; };
 		0B0AD5612C0F2E990061D015 /* UserRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRouter.swift; sourceTree = "<group>"; };
 		0B0AD5632C0F30880061D015 /* UserJoinRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserJoinRequestModel.swift; sourceTree = "<group>"; };
-		0B0AD5682C0F30CC0061D015 /* UserJoinDTOModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserJoinDTOModel.swift; sourceTree = "<group>"; };
-		0B0AD56B2C0F30F70061D015 /* UserJoinReusultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserJoinReusultModel.swift; sourceTree = "<group>"; };
+		0B0AD5682C0F30CC0061D015 /* UserDTOModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDTOModel.swift; sourceTree = "<group>"; };
+		0B0AD56B2C0F30F70061D015 /* UserReusultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReusultModel.swift; sourceTree = "<group>"; };
 		0B0AD56E2C0F328E0061D015 /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
+		0B0AD5702C0F33880061D015 /* EmailValidationRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidationRequestModel.swift; sourceTree = "<group>"; };
+		0B0AD5722C0F33A50061D015 /* EmailValidationResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidationResultModel.swift; sourceTree = "<group>"; };
+		0B0AD5742C0F33C10061D015 /* EmailValidationDTOModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidationDTOModel.swift; sourceTree = "<group>"; };
+		0B0AD5762C0F51DC0061D015 /* EmailLoginRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLoginRequestModel.swift; sourceTree = "<group>"; };
+		0B0AD5782C0F522C0061D015 /* KakaoLoginRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoLoginRequestModel.swift; sourceTree = "<group>"; };
+		0B0AD57A2C0F52440061D015 /* AppleLoginRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleLoginRequestModel.swift; sourceTree = "<group>"; };
+		0B0AD57C2C0F52A10061D015 /* DeviceTokenRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTokenRequestModel.swift; sourceTree = "<group>"; };
+		0B0AD57E2C0F53F80061D015 /* EditProfileRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileRequestModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -274,7 +290,13 @@
 		0B0AD5652C0F308B0061D015 /* User */ = {
 			isa = PBXGroup;
 			children = (
+				0B0AD5702C0F33880061D015 /* EmailValidationRequestModel.swift */,
 				0B0AD5632C0F30880061D015 /* UserJoinRequestModel.swift */,
+				0B0AD5762C0F51DC0061D015 /* EmailLoginRequestModel.swift */,
+				0B0AD5782C0F522C0061D015 /* KakaoLoginRequestModel.swift */,
+				0B0AD57A2C0F52440061D015 /* AppleLoginRequestModel.swift */,
+				0B0AD57C2C0F52A10061D015 /* DeviceTokenRequestModel.swift */,
+				0B0AD57E2C0F53F80061D015 /* EditProfileRequestModel.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -290,7 +312,8 @@
 		0B0AD5672C0F30C30061D015 /* User */ = {
 			isa = PBXGroup;
 			children = (
-				0B0AD5682C0F30CC0061D015 /* UserJoinDTOModel.swift */,
+				0B0AD5682C0F30CC0061D015 /* UserDTOModel.swift */,
+				0B0AD5742C0F33C10061D015 /* EmailValidationDTOModel.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -298,7 +321,8 @@
 		0B0AD56A2C0F30EB0061D015 /* User */ = {
 			isa = PBXGroup;
 			children = (
-				0B0AD56B2C0F30F70061D015 /* UserJoinReusultModel.swift */,
+				0B0AD56B2C0F30F70061D015 /* UserReusultModel.swift */,
+				0B0AD5722C0F33A50061D015 /* EmailValidationResultModel.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -399,24 +423,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B0AD55F2C0E985C0061D015 /* RefreshAccessTokenResultModel.swift in Sources */,
+				0B0AD5772C0F51DC0061D015 /* EmailLoginRequestModel.swift in Sources */,
+				0B0AD57F2C0F53F80061D015 /* EditProfileRequestModel.swift in Sources */,
 				0B0AD5112C0DCA970061D015 /* ViewController.swift in Sources */,
 				0B0AD50D2C0DCA970061D015 /* AppDelegate.swift in Sources */,
 				0B0AD5362C0DE2FA0061D015 /* APIKeyPublic.swift in Sources */,
 				0B0AD5642C0F30880061D015 /* UserJoinRequestModel.swift in Sources */,
 				0B0AD53B2C0DEBF30061D015 /* DTODecodable.swift in Sources */,
+				0B0AD57D2C0F52A10061D015 /* DeviceTokenRequestModel.swift in Sources */,
+				0B0AD5792C0F522C0061D015 /* KakaoLoginRequestModel.swift in Sources */,
 				0B0AD5592C0E8FDC0061D015 /* HTTPHeaders.swift in Sources */,
+				0B0AD5712C0F33880061D015 /* EmailValidationRequestModel.swift in Sources */,
 				0B0AD5542C0E8FC10061D015 /* MoyaCache.swift in Sources */,
 				0B0AD5562C0E8FC10061D015 /* MoyaLogger.swift in Sources */,
-				0B0AD5692C0F30CC0061D015 /* UserJoinDTOModel.swift in Sources */,
+				0B0AD5692C0F30CC0061D015 /* UserDTOModel.swift in Sources */,
 				0B0AD5552C0E8FC10061D015 /* Interceptor.swift in Sources */,
 				0B0AD5442C0DEECE0061D015 /* KeychainManager.swift in Sources */,
 				0B0AD5342C0DE2F20061D015 /* APIKey.swift in Sources */,
 				0B0AD53D2C0DEC5F0061D015 /* DTOModel.swift in Sources */,
 				0B0AD55B2C0E95BB0061D015 /* AuthRepository.swift in Sources */,
+				0B0AD5732C0F33A50061D015 /* EmailValidationResultModel.swift in Sources */,
 				0B0AD5412C0DEDA20061D015 /* AuthRouter.swift in Sources */,
 				0B0AD5622C0F2E990061D015 /* UserRouter.swift in Sources */,
+				0B0AD5752C0F33C10061D015 /* EmailValidationDTOModel.swift in Sources */,
+				0B0AD57B2C0F52440061D015 /* AppleLoginRequestModel.swift in Sources */,
 				0B0AD56F2C0F328E0061D015 /* DateFormatter+Extension.swift in Sources */,
-				0B0AD56C2C0F30F70061D015 /* UserJoinReusultModel.swift in Sources */,
+				0B0AD56C2C0F30F70061D015 /* UserReusultModel.swift in Sources */,
 				0B0AD55D2C0E965E0061D015 /* AuthRepositoryImpl.swift in Sources */,
 				0B0AD50F2C0DCA970061D015 /* SceneDelegate.swift in Sources */,
 			);

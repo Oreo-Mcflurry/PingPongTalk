@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct UserJoinDTOModel: DTOModel {
+struct UserDTOModel: DTOModel {
 	let userID: String
 	let email: String
 	let nickName: String
