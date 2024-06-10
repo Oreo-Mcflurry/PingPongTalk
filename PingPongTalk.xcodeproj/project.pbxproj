@@ -48,6 +48,8 @@
 		0B0AD57F2C0F53F80061D015 /* EditProfileRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD57E2C0F53F80061D015 /* EditProfileRequestModel.swift */; };
 		0B0AD5812C0F56E80061D015 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD5802C0F56E80061D015 /* UserRepository.swift */; };
 		0B0AD5832C0F570A0061D015 /* UserRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD5822C0F570A0061D015 /* UserRepositoryImpl.swift */; };
+		0B0AD5852C1037EE0061D015 /* ProfileResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD5842C1037EE0061D015 /* ProfileResultModel.swift */; };
+		0B0AD5872C1038050061D015 /* ProfileDTOModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD5862C1038050061D015 /* ProfileDTOModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +89,8 @@
 		0B0AD57E2C0F53F80061D015 /* EditProfileRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileRequestModel.swift; sourceTree = "<group>"; };
 		0B0AD5802C0F56E80061D015 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 		0B0AD5822C0F570A0061D015 /* UserRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryImpl.swift; sourceTree = "<group>"; };
+		0B0AD5842C1037EE0061D015 /* ProfileResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileResultModel.swift; sourceTree = "<group>"; };
+		0B0AD5862C1038050061D015 /* ProfileDTOModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDTOModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -320,6 +324,7 @@
 			children = (
 				0B0AD5682C0F30CC0061D015 /* UserDTOModel.swift */,
 				0B0AD5742C0F33C10061D015 /* EmailValidationDTOModel.swift */,
+				0B0AD5862C1038050061D015 /* ProfileDTOModel.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -329,6 +334,7 @@
 			children = (
 				0B0AD56B2C0F30F70061D015 /* UserReusultModel.swift */,
 				0B0AD5722C0F33A50061D015 /* EmailValidationResultModel.swift */,
+				0B0AD5842C1037EE0061D015 /* ProfileResultModel.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -433,6 +439,7 @@
 				0B0AD57F2C0F53F80061D015 /* EditProfileRequestModel.swift in Sources */,
 				0B0AD5112C0DCA970061D015 /* ViewController.swift in Sources */,
 				0B0AD50D2C0DCA970061D015 /* AppDelegate.swift in Sources */,
+				0B0AD5872C1038050061D015 /* ProfileDTOModel.swift in Sources */,
 				0B0AD5832C0F570A0061D015 /* UserRepositoryImpl.swift in Sources */,
 				0B0AD5362C0DE2FA0061D015 /* APIKeyPublic.swift in Sources */,
 				0B0AD5642C0F30880061D015 /* UserJoinRequestModel.swift in Sources */,
@@ -448,6 +455,7 @@
 				0B0AD5552C0E8FC10061D015 /* Interceptor.swift in Sources */,
 				0B0AD5442C0DEECE0061D015 /* KeychainManager.swift in Sources */,
 				0B0AD5342C0DE2F20061D015 /* APIKey.swift in Sources */,
+				0B0AD5852C1037EE0061D015 /* ProfileResultModel.swift in Sources */,
 				0B0AD53D2C0DEC5F0061D015 /* DTOModel.swift in Sources */,
 				0B0AD55B2C0E95BB0061D015 /* AuthRepository.swift in Sources */,
 				0B0AD5732C0F33A50061D015 /* EmailValidationResultModel.swift in Sources */,

@@ -161,7 +161,7 @@ extension UserRouter: TargetType {
 				HTTPHeaders.auth.rawValue: KeychainManager.getData(with: .accessToken),
 				HTTPHeaders.contentType.rawValue: HTTPHeaders.multipart.rawValue
 			]
-		case .getUserProfile(let userID):
+		case .getUserProfile:
 			return [
 				HTTPHeaders.accept.rawValue: HTTPHeaders.json.rawValue,
 				HTTPHeaders.key.rawValue: APIKey.key.rawValue,
